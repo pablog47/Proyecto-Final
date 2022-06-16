@@ -1,0 +1,221 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+.bann {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+}
+
+.banner-img {
+    max-height: 500px;
+    max-width: 100%;
+    margin-bottom: -8px;
+}
+
+.header-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: rgb(56, 50, 14);
+    font-family: 'Quintessential', cursive;
+    font-size: x-large;
+}
+.marginExpand {
+    margin: 130px 0;
+}
+.marginExpandSecond {
+    margin: 80px 0 20px 0;
+}
+.fieldWidth {
+width: 20vw;
+background-color: rgb(240, 240, 240);
+}
+.img-fit {
+    /* display: flex;
+    justify-content: flex-end;
+    position: absolute; */
+    width: 50%;
+    /* height: 600px; */
+    /* margin-left: 35%;
+    margin-bottom: 40px; */
+}
+.main__div1--flex {
+    display: flex;
+    justify-content: space-around;
+    border-top: solid 2px black;
+}
+.body__nav--marginexppand {
+    margin-bottom: 150px;
+}    
+
+.body__p--marginexpand {
+   margin: 2% 0 10% 0;
+   padding-right: 20%;
+   
+}
+.body__p--topborder {
+    margin-top: 20px;
+    padding-top: 50px;
+}
+.fotos__div--flex {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+gap: 5px;
+}
+.formReorder {
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+gap: 3px;
+}
+.item {
+    margin-top: 20px;
+    width: 700px;
+    height: 500px; 
+    border-radius: 5%;
+
+}
+.placeTitles {
+    margin: 8% 0 0% 10%;
+}
+i {
+    font-size: 50px;
+    color: black;
+}
+table {
+    margin: 40px auto;
+    border: 1px solid rgb(199, 199, 199);
+    max-width: 600px;
+    font-size: 20px;
+}
+
+th {
+    border: 1px solid rgb(199, 199, 199);
+    padding: 20px;
+    background-color: rgb(233, 233, 233);
+}
+
+td {
+    border: 1px solid rgb(199, 199, 199);
+    text-align: center;
+    padding: 20px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    margin: .5em 0;
+    padding: 1em;
+}
+
+ul li {
+    word-spacing: 3cm;
+    display: inline;
+    font-size: larger;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-size: medium;
+    color: black;
+    line-height: 1.7;
+}
+h2 {
+    width: 25vw;
+}
+
+a {
+    text-decoration: none;
+}
+a:link {
+    color: white;
+}
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    color: rgb(74, 74, 173);
+    transition: all 0.15s ease-in-out;
+}
+.stylingEffect {
+    filter: opacity(75%);
+    transition: all 0.15s ease-in-out;
+    text-align: center;
+}
+.stylingEffect:hover {
+    filter: opacity(100%);
+    transform: scale(1.05, 1.05);
+
+}
+.back-full {
+    background-color: rgb(56, 50, 14);
+}
+
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+.titlesCenter {
+    margin: 0 auto 5% auto
+}
+
+
+footer {
+    padding: 10px 0;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    text-align: center;
+
+}
+
+footer span {
+    display: block;
+    padding: 20px 0px 20px 0px;
+    font-weight: bold;
+    font-style: normal;
+    background-color: lightgray;
+}
+.signSpan {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: x-large;
+}
+.initialLetter {
+    font-family: 'Dancing Script';
+    font-weight: bold;
+    font-size: 40px;
+    font-style: normal;
+}
+h2 {
+    font-family: 'Bebas Neue', cursive;  
+}
+
+.center {
+    margin: 10% auto; 
+}
+.form-t {
+    font-weight: bold;
+}
+.sectionOrder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
