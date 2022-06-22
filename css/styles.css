@@ -221,6 +221,9 @@ a:hover {
     transform: scale(1.05, 1.05);
 
 }
+.gradientContacts {
+    background-image: linear-gradient(to right, lightgray, white);
+}
 
 .back-full {
     background-color: rgb(56, 50, 14);
