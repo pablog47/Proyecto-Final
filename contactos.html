@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pablo Galazzo</title>
+  <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.min.css">
+  <script src="./css/bootstrap/js/jquery.slim.min.js"></script>
+  <script src="./css/bootstrap/js/bootstrap.bundle.min.js"></script>
   <link rel="shortcut icon" href="./imgs/microphone.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -21,29 +24,38 @@
 </head>
 
 <body>
+  <script>$(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })</script>
   <header>
     <div class="header-container">
       <img src="./imgs/pablo-page.jpg" alt="Mi foto" class="banner-img" />
       <h1 class="bann">Pablo Galazzo</h1>
     </div>
-    <nav>
-      <ul>
-        <li>
-          <a class="whiteLink" href="./index.html">INICIO</a>
-        </li>
-        <li>
-          <a class="whiteLink" href="./shows.html">SHOWS</a>
-        </li>
-        <li>
-          <a class="whiteLink" href="./fotos.html">FOTOS</a>
-        </li>
-        <li>
-          <a class="whiteLink" href="./videos.html">VIDEOS</a>
-        </li>
-        <li>
-          <a class="whiteLink" href="./contactos.html">CONTACTOS</a>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 bootsnav col col-12">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">INICIO <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./shows.html">SHOWS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./fotos.html">FOTOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./videos.html">VIDEOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./contactos.html">CONTACTOS</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
   <h2 class="placeTitles">Contactos</h2>
@@ -66,45 +78,57 @@
       </a>
     </article>
   </section>
-
-  <div class="container">
-    <h2 class="suscribeTitle marginExpandSecond">Suscríbete!</h2>
-    <p class="gradientContacts"><b>Si deseas recibir información adicional</b>, así como participar en sorteos de entradas, suscribete
-      completando el
-      siguiente <b>formulario!</b></p>
-    <form action="gracias.html" method="post">
-      <fieldset class="fieldWidth formReorder">
-        <legend><b>Datos Personales</b></legend>
-        <label for="name">Nombre:</label>
-        <input id="name" type="text" required placeholder="Ingrese su nombre"><br>
-        <label for="last">Apellido:</label>
-        <input id="last" type="text" required placeholder="Ingrese su apellido"><br>
-        <label for="mail">Email:</label>
-        <input id="mail" type="text" required placeholder="Ingrese su E-mail"><br>
-      </fieldset>
-      <div class="marginExpandSecond">
-        <p class="gradientContacts">Que estilos musicales preferís? </p><br>
-        <label for="rock">Rock</label>
-        <input id="rock" type="checkbox" name="Question">
-
-        <label for="pop">Pop</label>
-        <input id="pop" type="checkbox" name="Question">
-
-        <label for="metal">Metal</label>
-        <input id="metal" type="checkbox" name="Question">
-
-        <label for="k-pop">K-pop</label>
-        <input id="k-pop" type="checkbox" name="Question">
-
-        <label for="otros">Otros</label>
-        <input id="otros" type="checkbox" name="Question">
+  <div class="container formCenter">
+    <div class="xcontainer">
+      <h2 class="suscribeTitle marginExpandSecond">Suscribíte!</h2>
+      <div class="alert alert-dark col col-12" role="alert">
+        <strong>Si deseas recibir información adicional</strong>, así como participar en sorteos de entradas, suscribíte
+        completando el siguiente <strong>formulario!</strong>
       </div>
+      <form class="formCenter" action="gracias.html" method="post">
+        <fieldset class="fieldWidth formReorder col-lg-8 col-sm-12">
+          <legend><b>Datos Personales</b></legend>
+          <label for="name">Nombre:</label>
+          <input id="name" type="text" required placeholder="Ingresá tu nombre"><br>
+          <label for="last">Apellido:</label>
+          <input id="last" type="text" required placeholder="Ingresá tu apellido"><br>
+          <label for="mail">Email:</label>
+          <input id="mail" type="text" required placeholder="Ingresá tu E-mail"><br>
+        </fieldset>
+        <section class="marginExpandThird">
+          <div class="marginExpandSecond">
+            <div class="alert alert-dark col col-12 text-center" role="alert">
+              Que estilos musicales preferís?
+            </div>
+            <div class="questionFont">
+              <label for="rock">Rock</label>
+              <input id="rock" type="checkbox" name="Question">
 
-      <label for="comentarios" class="gradientContacts">Si deseas dejar algun comentario o sugerencia, podés hacerlo acá:</label><br>
-      <textarea name="comentarios" id="comentarios" rows="10" cols="50"></textarea><br>
-      <input type="submit" value="Enviar formulario">
-      <input class="marginExpandSecond" type="reset" value="Limpiar formulario">
-    </form>
+              <label for="pop">Pop</label>
+              <input id="pop" type="checkbox" name="Question">
+
+              <label for="metal">Metal</label>
+              <input id="metal" type="checkbox" name="Question">
+
+              <label for="k-pop">K-pop</label>
+              <input id="k-pop" type="checkbox" name="Question">
+
+              <label for="otros">Otros</label>
+              <input id="otros" type="checkbox" name="Question">
+            </div>
+        </section>
+
+        <div class="alert alert-dark col col-lg-6 col-sm-10 text-center" role="alert">
+          Si deseas dejar algun comentario/sugerencia, podés hacerlo acá:
+        </div>
+        <textarea name="comentarios" id="comentarios" placeholder="Deja tu comentario acá" rows="10"
+          cols="50"></textarea><br>
+        <div>
+          <input type="submit" class="btn btn-primary btn-sm" value="Enviar formulario">
+          <input type="reset" class="btn btn-primary btn-sm" value="Limpiar formulario">
+        </div>
+      </form>
+    </div>
   </div>
   <footer>
     <span>

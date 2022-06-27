@@ -1,3 +1,4 @@
+/* Estilos generales para el html completo */
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -37,24 +38,24 @@ html {
     grid-area: footer;
 }
 
-/* Hasta acá */
-
-
+/* clase utilizada solo en h2 en index */
 .bottomBorder {
     border-bottom: 2px solid black;
     width: 100%;
 }
 
+/* Los siguientes estilos fueron utilizados en el banner/header */
 .bann {
     position: absolute;
     top: 80%;
     left: 50%;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 .banner-img {
     max-height: 500px;
     max-width: 100%;
-    margin-bottom: -8px;
 }
 
 .header-container {
@@ -66,6 +67,7 @@ html {
     font-size: 1em;
 }
 
+/* Estas clases son para expandir márgenes o posicionar correctamente distintos elementos */
 .marginExpand {
     margin: 130px 0;
 }
@@ -74,19 +76,12 @@ html {
     margin: 80px 0 20px 0;
 }
 
-.fieldWidth {
-    width: 20vw;
-    background-color: rgb(240, 240, 240);
+.marginExpandThird {
+    margin: 0 0 40px 0
 }
 
 .img-fit {
     width: 80%;
-}
-
-.main__div1--flex {
-    display: flex;
-    justify-content: space-around;
-    border-top: solid 2px black;
 }
 
 .body__nav--marginexppand {
@@ -94,17 +89,46 @@ html {
 }
 
 .body__p--marginexpand {
-    width: 80%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
 
 
 }
 
-.body__p--topborder {
+.body__p--position {
     margin-top: 20px;
     padding-top: 50px;
 }
+
+.fieldWidth {
+    background-color: rgb(240, 240, 240);
+}
+
+.item {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.fitWidth {
+    width: fit-content;
+}
+
+.center {
+    margin: 10% auto;
+}
+
+.placeTitles {
+    margin: 8% 0 0% 10%;
+}
+
+/* diferentes clases con flexbox */
+.main__div1--flex {
+    display: flex;
+    justify-content: space-around;
+    border-top: solid 2px black;
+}
+
 
 .fotos__div--flex {
     display: flex;
@@ -120,23 +144,51 @@ html {
     gap: 3px;
 }
 
-.item {
-    margin-top: 20px;
-    width: 100%;
-    border-radius: 5%;
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    margin: .5em 0;
+    padding: 1em;
+    gap: .5em;
+}
 
+ul li {
+    word-spacing: 3cm;
+    display: inline;
+    font-size: larger;
+}
+
+.bootsnav {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
 
 }
 
-.placeTitles {
-    margin: 8% 0 0% 10%;
+.formCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.sectionOrder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
 
 i {
     font-size: 50px;
     color: black;
 }
 
+/* Estilos utilizados en tabla */
 table {
     margin: 0%;
     border: 1px solid rgb(199, 199, 199);
@@ -158,24 +210,7 @@ td {
     padding: 20px;
 }
 
-ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    background-color: black;
-    font-weight: bold;
-    margin: .5em 0;
-    padding: 1em;
-    gap: .5em;
-}
 
-ul li {
-    word-spacing: 3cm;
-    display: inline;
-    font-size: larger;
-}
 
 p {
     font-family: Arial, Helvetica, sans-serif;
@@ -189,6 +224,7 @@ h2 {
     width: 25vw;
 }
 
+/* estilos utilizados para links en general */
 a {
     text-decoration: none;
 }
@@ -201,13 +237,14 @@ a:visited {
     color: inherit;
 }
 
-a.whiteLink {
+.whiteLink {
     color: white;
 }
 
 a:hover {
     color: rgb(74, 74, 173);
     transition: all 0.15s ease-in-out;
+    text-decoration: none;
 }
 
 .stylingEffect {
@@ -221,6 +258,7 @@ a:hover {
     transform: scale(1.05, 1.05);
 
 }
+
 .gradientContacts {
     background-image: linear-gradient(to right, lightgray, white);
 }
@@ -229,7 +267,7 @@ a:hover {
     background-color: rgb(56, 50, 14);
 }
 
-.container {
+.xcontainer {
     width: 100%;
 
 }
@@ -273,21 +311,17 @@ h2 {
     font-family: 'Bebas Neue', cursive;
 }
 
-.center {
-    margin: 10% auto;
-}
 
 .form-t {
     font-weight: bold;
 }
 
-.sectionOrder {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
+.questionFont {
+    font-weight: bold;
+    font-size: 1em;
 }
 
+/* Animación */
 @keyframes suscribeTitle {
     0% {
         background-color: black;
@@ -322,7 +356,7 @@ h2 {
     animation-duration: 7s;
     animation-delay: 1s;
 }
-
+/* media queries */
 @media screen and (min-width: 700px) {
     .item {
 
@@ -333,7 +367,7 @@ h2 {
     }
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 768px) {
     #wrapper {
         display: grid;
         grid-template-areas:
@@ -365,6 +399,7 @@ h2 {
     }
 }
 
+
 @media screen and (min-width: 450px) {
     table {
         margin: 40px auto;
@@ -373,7 +408,7 @@ h2 {
         font-size: 20px;
     }
 
-    .container {
+    .xcontainer {
         width: 80%;
         margin-left: auto;
         margin-right: auto;

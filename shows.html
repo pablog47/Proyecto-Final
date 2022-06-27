@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pablo Galazzo</title>
+  <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.min.css">
+  <script src="./css/bootstrap/js/jquery.slim.min.js"></script>
+  <script src="./css/bootstrap/js/bootstrap.bundle.min.js"></script>
   <link rel="shortcut icon" href="./imgs/microphone.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -25,30 +28,38 @@
       <img src="./imgs/pablo-page.jpg" alt="Mi foto" class="banner-img" />
       <h1 class="bann">Pablo Galazzo</h1>
     </div>
-    <nav>
-      <ul>
-        <li>
-          <a class="whiteLink" href="./index.html">INICIO</a>
-        </li>
-        <li>
-          <a class="whiteLink" href="./shows.html">SHOWS</a>
-        </li>
-        <li>
-          <a class="whiteLink" href="./fotos.html">FOTOS</a>
-        </li>
-        <li>
-          <a class="whiteLink" href="./videos.html">VIDEOS</a>
-        </li>
-        <li>
-          <a class="whiteLink" href="./contactos.html">CONTACTOS</a>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 bootsnav col col-12">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">INICIO <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./shows.html">SHOWS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./fotos.html">FOTOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./videos.html">VIDEOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contactos.html">CONTACTOS</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
   <h2 class="placeTitles">Shows</h2>
-  <section class="container">
-    <p class="body__p--marginexpand">Estas son mis próximas presentaciones. <br>
-      Se irán actualizando, estén atentos!</p>
+  <section class="xcontainer">
+    <div class="alert alert-dark body__p--marginexpand border border-dark" role="alert">
+      <strong>Estas son mis próximas presentaciones.</strong> Se irán actualizando a medida que surgen nuevas fechas,
+      estén atentos!
+    </div>
     <table class="center">
       <tr>
         <th>Fecha</th>
@@ -72,6 +83,7 @@
         <td>Gier Club</td>
       </tr>
     </table>
+
   </section>
   <footer>
     <span>
