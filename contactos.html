@@ -24,9 +24,6 @@
 </head>
 
 <body>
-  <script>$(function () {
-      $('[data-toggle="tooltip"]').tooltip()
-    })</script>
   <header>
     <div class="header-container">
       <img src="./imgs/pablo-page.jpg" alt="Mi foto" class="banner-img" />
@@ -38,7 +35,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 bootsnav col col-12">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 bootsnav col-12">
           <li class="nav-item">
             <a class="nav-link" href="./index.html">INICIO <span class="sr-only">(current)</span></a>
           </li>
@@ -81,7 +78,7 @@
   <div class="container formCenter">
     <div class="xcontainer">
       <h2 class="suscribeTitle marginExpandSecond">Suscribíte!</h2>
-      <div class="alert alert-dark col col-12" role="alert">
+      <div class="alert alert-dark col-12" role="alert">
         <strong>Si deseas recibir información adicional</strong>, así como participar en sorteos de entradas, suscribíte
         completando el siguiente <strong>formulario!</strong>
       </div>
@@ -97,7 +94,7 @@
         </fieldset>
         <section class="marginExpandThird">
           <div class="marginExpandSecond">
-            <div class="alert alert-dark col col-12 text-center" role="alert">
+            <div class="alert alert-dark col-12 text-center" role="alert">
               Que estilos musicales preferís?
             </div>
             <div class="questionFont">
@@ -118,7 +115,7 @@
             </div>
         </section>
 
-        <div class="alert alert-dark col col-lg-6 col-sm-10 text-center" role="alert">
+        <div class="alert alert-dark col-lg-6 col-sm-10 text-center" role="alert">
           Si deseas dejar algun comentario/sugerencia, podés hacerlo acá:
         </div>
         <textarea name="comentarios" id="comentarios" placeholder="Deja tu comentario acá" rows="10"
@@ -135,6 +132,9 @@
       Pablo Galazzo © 2022
     </span>
   </footer>
+  <script>$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })</script>
 </body>
 
 </html>
