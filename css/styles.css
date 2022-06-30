@@ -45,12 +45,14 @@ html {
 }
 
 /* Los siguientes estilos fueron utilizados en el banner/header */
-.bann {
+.banTitle {
     position: absolute;
     top: 80%;
     left: 50%;
     font-size: 2em;
     font-weight: bold;
+    color: white;
+    font-family: 'Quintessential', cursive;
 }
 
 .banner-img {
@@ -61,10 +63,7 @@ html {
 .header-container {
     position: relative;
     text-align: center;
-    color: white;
     background-color: black;
-    font-family: 'Quintessential', cursive;
-    font-size: 1em;
 }
 
 /* Estas clases son para expandir márgenes o posicionar correctamente distintos elementos */
@@ -120,6 +119,15 @@ html {
 
 .placeTitles {
     margin: 8% 0 0% 10%;
+}
+
+.xcontainer {
+    width: 100%;
+
+}
+
+.titlesCenter {
+    margin: 0 auto 5% auto
 }
 
 /* diferentes clases con flexbox */
@@ -268,16 +276,6 @@ a:hover {
     background-color: rgb(56, 50, 14);
 }
 
-.xcontainer {
-    width: 100%;
-
-}
-
-.titlesCenter {
-    margin: 0 auto 5% auto
-}
-
-
 footer {
     padding: 10px 0;
     width: 100%;
@@ -312,11 +310,6 @@ h2 {
     font-family: 'Bebas Neue', cursive;
 }
 
-
-.form-t {
-    font-weight: bold;
-}
-
 .questionFont {
     font-weight: bold;
     font-size: 1em;
@@ -326,7 +319,9 @@ h2 {
     background-color: #0f1011;
     border-color: rgb(17, 18, 19);
 }
-
+.bg-light {
+    background-color: #d6d8d9!important;
+}
 /* Animación */
 @keyframes suscribeTitle {
     0% {
