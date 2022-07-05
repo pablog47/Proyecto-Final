@@ -1,0 +1,24 @@
+#wrapper {
+    max-width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.banner-header {
+    grid-area: banner-header;
+}
+
+.bio {
+    grid-area: bio;
+    text-align: center;
+}
+
+.sidePhoto {
+    grid-area: sidePhoto;
+    align-self: center;
+    visibility: hidden;
+}
+
+.footer {
+    grid-area: footer;
+}
