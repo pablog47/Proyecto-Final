@@ -1,0 +1,126 @@
+$section-font: 'Bebas Neue', cursive;
+$signature: 'Dancing Script', cursive;
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    margin: 0%;
+    border: 1px solid rgb(199, 199, 199);
+    max-width: 100%;
+    font-size: 1em;
+    th {
+        border: 1px solid rgb(199, 199, 199);
+        padding: 20px;
+        background-color: rgb(233, 233, 233);
+    }
+    td {
+        border: 1px solid rgb(199, 199, 199);
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-size: medium;
+    color: black;
+    line-height: 1.7;
+}
+
+h1 {
+    &.banTitle {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        font-size: 2em;
+        font-weight: bold;
+        color: white;
+        font-family: 'Quintessential', cursive;
+    }
+}
+
+h2 {
+    width: 25vw;
+    font-family: $section-font;
+    &.bottomBorder {
+        border-bottom: 2px solid black;
+        width: 100%;
+    }
+}
+
+a {
+    text-decoration: none;
+    &:link {
+        color: black;
+    }
+    &:visited {
+        color: inherit;
+    }
+    &:hover {
+        color: rgb(74, 74, 173);
+        transition: all 0.15s ease-in-out;
+        text-decoration: none;   
+    }
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    margin: .5em 0;
+    padding: 1em;
+    gap: .5em;
+    li {
+        word-spacing: 3cm;
+        display: inline;
+        font-size: larger;
+    }
+}
+
+i {
+    font-size: 50px;
+    color: black;
+}
+
+
+.signSpan {
+        font-family: $signature;
+        font-weight: bold;
+        font-size: x-large;
+}
+    
+.initialLetter {
+        font-family: 'Dancing Script';
+        font-weight: bold;
+        font-size: 40px;
+        font-style: normal;
+}
+.questionFont {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.fieldColor {
+    background-color: rgb(240, 240, 240);
+}
+
+
+
+
+
+
