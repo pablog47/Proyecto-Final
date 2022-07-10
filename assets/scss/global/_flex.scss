@@ -1,27 +1,16 @@
-.main__div1--flex {
-    display: flex;
-    justify-content: space-around;
-    border-top: solid 2px black;
-}
-
 .fotos__div--flex {
-    display: flex;
+    @include flex(none, space-around, none);
     flex-wrap: wrap;
-    justify-content: space-around;
     gap: 5px;
 }
 
 .formReorder {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    @include flex(column, space-around, none);
     gap: 3px;
 }
 
 .formCenter {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(column, none, center);
 }
 
 .sectionOrder {

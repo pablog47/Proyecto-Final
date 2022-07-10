@@ -1,17 +1,13 @@
-$section-font: 'Bebas Neue', cursive;
-$signature: 'Dancing Script', cursive;
-
 html {
-    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 table {
@@ -119,8 +115,28 @@ i {
     background-color: rgb(240, 240, 240);
 }
 
+.fa-instagram-square:before {
+    color: map-get($social ,instagram);
+    content: "\e055";
+}
 
+.fa-facebook-square:before {
+    color: map-get($social, facebook);
+    content: "\f082";
+}
 
+.fa-twitter-square:before {
+    color: map-get($social , twitter);
+    content: "\f081";
+}
 
+.fa-envelope:before {
+    color: map-get($social, gmail);
+    content: "\f0e0";
+}
 
+.fa-youtube:before {
+    color: map-get($social, youtube);
+    content: "\f167";
+}
 
