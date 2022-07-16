@@ -15,11 +15,13 @@ table {
     border: 1px solid rgb(199, 199, 199);
     max-width: 100%;
     font-size: 1em;
+
     th {
         border: 1px solid rgb(199, 199, 199);
         padding: 20px;
         background-color: rgb(233, 233, 233);
     }
+
     td {
         border: 1px solid rgb(199, 199, 199);
         text-align: center;
@@ -50,6 +52,7 @@ h1 {
 h2 {
     width: 25vw;
     font-family: $section-font;
+
     &.bottomBorder {
         border-bottom: 2px solid black;
         width: 100%;
@@ -58,16 +61,19 @@ h2 {
 
 a {
     text-decoration: none;
+
     &:link {
         color: black;
     }
+
     &:visited {
         color: inherit;
     }
+
     &:hover {
         color: rgb(74, 74, 173);
         transition: all 0.15s ease-in-out;
-        text-decoration: none;   
+        text-decoration: none;
     }
 }
 
@@ -81,6 +87,7 @@ ul {
     margin: .5em 0;
     padding: 1em;
     gap: .5em;
+
     li {
         word-spacing: 3cm;
         display: inline;
@@ -95,17 +102,18 @@ i {
 
 
 .signSpan {
-        font-family: $signature;
-        font-weight: bold;
-        font-size: x-large;
+    font-family: $signature;
+    font-weight: bold;
+    font-size: x-large;
 }
-    
+
 .initialLetter {
-        font-family: 'Dancing Script';
-        font-weight: bold;
-        font-size: 40px;
-        font-style: normal;
+    font-family: 'Dancing Script';
+    font-weight: bold;
+    font-size: 40px;
+    font-style: normal;
 }
+
 .questionFont {
     font-weight: bold;
     font-size: 1em;
@@ -116,7 +124,7 @@ i {
 }
 
 .fa-instagram-square:before {
-    color: map-get($social ,instagram);
+    color: map-get($social , instagram);
     content: "\e055";
 }
 
@@ -138,5 +146,33 @@ i {
 .fa-youtube:before {
     color: map-get($social, youtube);
     content: "\f167";
+}
+
+.shadows {
+    box-shadow: $shadow;
+}
+
+form {
+    div {
+        &.shadows {
+            &.btn {
+                transform: scale(0.93);
+                box-shadow: 1px 1px 1px gray;
+            }
+        }
+    }
+}
+
+td {
+    a {
+        &.table-style {
+       color: blue;
+       text-shadow: 1px 1px 1px gray;
+        }
+    }
+}
+
+.table-style:hover {
+    color: darkblue;
 }
 

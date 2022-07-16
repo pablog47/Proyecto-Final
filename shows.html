@@ -8,7 +8,7 @@
     <meta name="description" content="Informacion y contenido sobre Pablo Galazzo">
     <meta name="keywords" content="MUSICA, CANTANTE, SHOWS, RECITALES, VIDEOS, ANIME, METAL, ROCK, POP">
     <meta name="robots" content="index, follow">
-    <title>Pablo Galazzo / Shows</title>
+    <title>Pablo Galazzo - Shows</title>
     <link rel="stylesheet" href="./assets/css/bootstrap/css/bootstrap.min.css">
     <script src="./assets/css/bootstrap/js/jquery.slim.min.js"></script>
     <script src="./assets/css/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -61,11 +61,12 @@
   </header>
   <h2 class="placeTitles">Shows</h2>
   <section class="xcontainer">
-    <div class="alert alert-dark body__p--marginexpand border border-dark" role="alert">
+    <div class="shadows alert alert-dark body__p--marginexpand border border-dark" role="alert">
       <strong>Estas son mis próximas presentaciones.</strong> Se irán actualizando a medida que surgen nuevas fechas,
       estén atentos!
     </div>
-    <table class="center">
+    <article class="row justify-content-around">
+    <table class="shadows col-xl-4 col-lg-6">
       <tr>
         <th>Fecha</th>
         <th>Localidad</th>
@@ -75,26 +76,42 @@
       <tr>
         <td>04/06</td>
         <td>Buenos Aires</td>
-        <td>La Trastienda</td>
+        <td><a class="table-style" href="https://goo.gl/maps/XzmxTTQfb4GKP2fs5" target="_blank" data-toggle="tooltip" title="Ver ubicación">La Trastienda</a></td>
       </tr>
       <tr>
         <td>18/06</td>
         <td>Buenos Aires</td>
-        <td>Under Club</td>
+        <td><a class="table-style" href="https://goo.gl/maps/upXMZRpm2fNDGo7z7" target="_blank" data-toggle="tooltip" title="Ver ubicación">Under Club</a></td>
       </tr>
       <tr>
         <td>03/07</td>
         <td>Buenos Aires</td>
-        <td>Gier Club</td>
+        <td><a class="table-style" href="https://goo.gl/maps/ubijMpZi6gs5TouU8" target="_blank" data-toggle="tooltip" title="Ver ubicación">Gier Club</a></td>
+      </tr>
+      <tr>
+        <td>16/09</td>
+        <td>Buenos Aires</td>
+        <td><a class="table-style" href="https://goo.gl/maps/qFXBJcwTQYGWHKtv5" target="_blank" data-toggle="tooltip" title="Ver ubicación">Uniclub</a></td>
+      </tr>
+      <tr>
+        <td>30/09</td>
+        <td>Buenos Aires</td>
+        <td><a class="table-style" href="https://goo.gl/maps/qFXBJcwTQYGWHKtv5" target="_blank" data-toggle="tooltip" title="Ver ubicación">Uniclub</a></td>
       </tr>
     </table>
-
+    <div class="d-none d-xl-block col-lg-6">
+      <img class="img-fluid" src="./assets/imgs/shows.jpg" alt="gig">
+    </div>
+   </article> 
   </section>
   <footer>
     <span>
       Pablo Galazzo © 2022
     </span>
   </footer>
+  <script>$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })</script>
 </body>
 
 </html>

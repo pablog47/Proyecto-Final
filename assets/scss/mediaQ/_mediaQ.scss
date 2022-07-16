@@ -1,4 +1,4 @@
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
     .item {
 
         width: 700px;
@@ -42,7 +42,7 @@
 
 @media screen and (min-width: 450px) {
     table {
-        margin: 40px auto;
+        margin: auto;
         border: 1px solid rgb(199, 199, 199);
         max-width: 600px;
         font-size: 20px;
