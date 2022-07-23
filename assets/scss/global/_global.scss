@@ -20,6 +20,7 @@ table {
         border: 1px solid rgb(199, 199, 199);
         padding: 20px;
         background-color: rgb(233, 233, 233);
+        text-align: center;
     }
 
     td {
@@ -59,15 +60,15 @@ h2 {
     }
 }
 
+h3 {
+    color: black;
+}
+
 a {
     text-decoration: none;
 
     &:link {
         color: black;
-    }
-
-    &:visited {
-        color: inherit;
     }
 
     &:hover {
@@ -100,6 +101,13 @@ i {
     color: black;
 }
 
+textarea {
+    padding: 10px;
+}
+
+input {
+    padding: 0 10px;
+}
 
 .signSpan {
     font-family: $signature;
@@ -176,3 +184,23 @@ td {
     color: darkblue;
 }
 
+body {
+.top {
+    --offset: 50px; 
+    box-shadow: $shadow;
+    position: sticky;
+    bottom: 30px;
+    margin-bottom: 10px; 
+    margin-left: calc(50vw - 2.9em);     
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    background: rgb(170, 170, 170);
+    border-radius: 100px;
+    white-space: nowrap;
+    color: #fff;
+    font-weight: bold;
+}
+  }
